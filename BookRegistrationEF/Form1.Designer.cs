@@ -23,13 +23,33 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.components = new System.ComponentModel.Container();
+            this.cbBookList = new System.Windows.Forms.ComboBox();
+            this.SuspendLayout();
+            // 
+            // comboBox1
+            // 
+            this.cbBookList.FormattingEnabled = true;
+            this.cbBookList.Location = new System.Drawing.Point(269, 135);
+            this.cbBookList.Name = "comboBox1";
+            this.cbBookList.Size = new System.Drawing.Size(230, 21);
+            this.cbBookList.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbBookList);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ComboBox cbBookList;
     }
 }
 

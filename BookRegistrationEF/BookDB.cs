@@ -11,6 +11,8 @@ namespace BookRegistrationEF {
 
             List<Book> allBooks = (from b in context.Book
                                                    select b).ToList();
+
+            return allBooks;
         }
     }
 }
