@@ -11,5 +11,13 @@ namespace BookRegistrationEF {
 
             return context.Customer.ToList();
         }
+
+        public static void Add(Customer person) { // CustomerDB.Add()
+            var context = new BookContext();
+
+            context.Customer.Add(person);
+
+            context.SaveChanges();
+        }
     }
 }
